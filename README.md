@@ -10,5 +10,5 @@ A Python-based optimization suite implementing fundamental algorithmic paradigms
 
 ## 🛠️ Technical Focus
 
-* **Language:** Python 3.x
+* **Language:** Python
 * **Concepts:** Formal Logic Verification, Boolean Algebras, Backtracking Search Tree Optimization, Unit Propagation.
