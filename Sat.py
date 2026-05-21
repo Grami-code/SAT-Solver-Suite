@@ -74,17 +74,17 @@ def resolution(formula):
             return "SAT"
         clauses.update(new)
 
-# !INTERFAȚĂ UTILIZATOR!
+# GUI
 
-print("Alege metoda SAT:")
-print("1. Rezolutie")
+print("Choose SAT method:")
+print("1. Resolution")
 print("2. Davis–Putnam (DP)")
 print("3. DPLL")
-optiune = int(input("Metoda aleasa (1-3): "))
+optiune = int(input("Chosen method (1-3): "))
 
 # Exemplu de formulă CNF: (x1 ∨ ¬x2) ∧ (¬x1 ∨ x3) ∧ (¬x3)
 formula = [[1, -2], [-1, 3], [-3]]
-print("Formula CNF testata:", formula)
+print("CNF tested formula:", formula)
 
 start = time.time()
 if optiune == 1:
@@ -94,8 +94,8 @@ elif optiune == 2:
 elif optiune == 3:
     rezultat = "SAT" if dpll(formula) else "UNSAT"
 else:
-    rezultat = "Optiune invalida"
+    rezultat = "Invalid option"
 end = time.time()
 
-print(f"Rezultat: {rezultat}")
-print(f"Timp de executie: {round(end - start, 6)} secunde")
+print(f"Result: {rezultat}")
+print(f"Execution time: {round(end - start, 6)} seconds")
